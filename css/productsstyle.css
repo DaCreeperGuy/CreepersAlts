@@ -1,0 +1,551 @@
+:root {
+    --primary-color: rgb(50, 56, 148);
+    --primary-color-hover: rgb(91, 98, 189);
+    --dark: #161616;
+    --dark-box: #171717;
+}
+* {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #121212;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    
+}
+
+.shop {
+    transition: 0.4s;
+    position: relative;
+    left: 7px;
+    top: -10px;
+}
+.sidebar {
+    transition: 0.4s;
+    position: fixed;
+    height: 100vh;
+    width: 40px;
+    background-color: #141414;
+    list-style: none;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 500000;
+}.sidebar:hover {
+    width: 180px;
+}.sidebar:hover .sidebar-line-bottom {
+    opacity: 1;
+}.sidebar:hover .sidebar-line-top {
+    opacity: 1;
+}.sidebar:hover h1 {
+    opacity: 1;
+}.sidebar:hover .shop {
+    left: -50px;
+}.sidebar:hover .link-holder {
+    opacity: 1;
+}
+
+
+.sidebar h1 {
+    transition: 0.4s;
+    opacity: 0;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    position: relative;
+}
+
+.sidebar span {
+    color: var(--primary-color);
+}
+
+.sidebar-line-top {
+    opacity: 0;
+    transition: 0.4s;
+    width: 180px;
+    height: 1px;
+    background-color: var(--primary-color);
+    margin: auto;
+}
+.sidebar-line-bottom {
+    opacity: 0;
+    transition: 0.4s;
+    width: 180px;
+    height: 1px;
+    background-color: var(--primary-color);
+    margin: 30px auto;
+}
+
+.sidebar-links {
+    transition: 0.4s;
+    width: 180px;
+    height: 400px;
+    margin: -30px auto;
+}
+.link-holder {
+    opacity: 0;
+    transition: 0.4s;
+    position: relative;
+    width: 180px;
+    height: 50px;
+    margin: -10px auto;
+    top: 20px;
+    cursor: pointer;
+
+}.link-holder:hover {
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}.link-holder:hover a {
+    color: white;
+}
+
+.sidebar-links li {
+    transition: 0.4s;
+    position: relative;
+    margin: 10px;
+    left: 30px;
+    top: 15px;
+}
+
+.sidebar-links a {
+    color: rgb(145, 145, 145);
+    transition: 0.4s;
+}
+
+#important-button {
+    position: relative;
+    bottom: 30px;
+}
+
+.important {
+    opacity: 1;
+    transition: 0.4s;
+    position: relative;
+    width: 180px;
+    height: 50px;
+    margin: -10px auto;
+    top: -40px;
+    cursor: pointer;
+}
+.discord-button {
+    float: left;
+    bottom: 15px;
+    margin-left: -32px;
+    position: fixed;
+    z-index: 10;
+    transition: 0.4s;
+
+}
+
+
+
+
+
+
+
+.products-front-page {
+    padding: 7em;
+    height: calc(100vh - 14em);
+    background-color: #111111;
+}
+.purchase-products-minecraft {
+    padding: 7em;
+    height: calc(320vh - 14em);
+    background-color: #121212;
+}
+.purchase-products-streaming {
+    padding: 7em;
+    height: calc(250vh - 14em);
+    background-color: #121212;
+}
+.purchase-products-vpns {
+    padding: 7em;
+    height: calc(170vh - 14em);
+    background-color: #121212;
+}
+.purchase-products-clients {
+    padding: 7em;
+    height: calc(170vh - 14em);
+    background-color: #121212;
+}
+.purchase-products-gaming {
+    padding: 7em;
+    height: calc(170vh - 14em);
+    background-color: #121212;
+}
+
+
+.products-front-page-text {
+    height: 200px;
+    width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.products-front-page h1 {
+    color: white;
+    font-weight: normal;
+    position: relative;
+    font-size: 8em;
+    margin: -50px auto;
+}
+.products-front-page h1 span {
+    color: var(--primary-color);
+}
+
+.products-front-page p {
+    color: rgb(193, 193, 193);
+    margin: 50px auto;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.whatweoffer {
+    transition: 0.3s;
+    width: 700px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: var(--dark-box);
+    margin: -50px auto;
+    display: flex;
+}
+.whatweoffer h1 {
+    font-size: 1em;
+    margin: auto;
+}
+.whatweoffer img {
+    transition: 0.3s;
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+.whatweoffer:hover {
+    border-radius: 40px;
+    width: 800px;
+    border-top: 0.5px solid var(--primary-color);
+    border-bottom: 0.5px solid var(--primary-color);
+}
+.whatweoffer:hover .img1 {
+    top: -5px;
+}
+.whatweoffer:hover .img2 {
+    transition-delay: 0.5s;
+    top: -5px;
+}
+.whatweoffer:hover .img3 {
+    transition-delay: 1s;
+    top: -5px;
+}
+
+.bottom-line {
+    width: 200px;
+    height: 1px;
+    background-color: var(--primary-color);
+    margin: 70px auto;
+}
+
+.minecraft-text {
+    width: 900px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+}
+.minecraft-text h1 {
+    margin: auto;
+    font-size: 6em;
+    color: white;
+}
+.text-bottom-line {
+    width: 200px;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin: -5px auto;
+}
+
+.purchase-tabs-holder {
+    transition: 1s;
+
+    position: relative;
+    margin: 0px auto;
+    width: 1300px;
+    height: 1000px;
+    
+    margin-left: -210px;
+    
+
+}
+.product-tab {
+    transition: 0.5s;
+    position: relative;
+    margin: 40px 30px 50px;
+    width: 370px;
+    height: 450px;
+    right: -15px;
+    top: 0px;
+    background-color: var(--dark-box);
+    float: left;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.728);
+}.product-tab:hover {
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.purchase-tab-top {
+    width: 370px;
+    height: 170px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+}
+.product-tab button {
+    position: relative;
+    transition: 0.4s;
+    border: none;
+    color: white;
+    padding: 15px 90px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px auto;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    bottom: 70px;
+}button:hover {
+    box-shadow: inset 10px 0px 0px 30px rgba(255, 255, 255, 0.081);
+    padding: 15px 120px;
+}
+
+.purchase-tab-top h1 {
+    font-size: 1.8em;
+    line-height: 150px;
+}
+.hypixel-logo {
+    position: relative;
+    width: 20%;
+    height: 0px auto;
+    bottom: 40px;
+}
+.minecraft-logo {
+    position: relative;
+    width: 30%;
+    height: 0px auto;
+    bottom: 40px;
+}
+.minecon-logo {
+    position: relative;
+    width: 20%;
+    height: 30px auto;
+    bottom: 55px; 
+}
+.optifine-logo {
+    position: relative;
+    width: 30%;
+    height: 30px auto;
+    bottom: 40px; 
+    border-radius: 10px;
+}
+.netflix-logo {
+    position: relative;
+    width: 40%;
+    height: 30px auto;
+    bottom: 50px; 
+    border-radius: 10px;
+}
+#netflix-top {
+    background-color: rgb(172, 36, 36);
+}
+#netflix-button {
+    background-color: rgb(172, 36, 36);
+}
+.crunchyroll-logo {
+    position: relative;
+    width: 50%;
+    height: 30px auto;
+    bottom: 30px; 
+    border-radius: 10px;
+}
+#crunchyroll-top {
+    background-color: rgb(187, 119, 45);
+}
+#crunchyroll-button {
+    background-color: rgb(187, 119, 45);
+}
+.disneyplus-logo {
+    position: relative;
+    width: 60%;
+    height: 30px auto;
+    bottom: 60px; 
+    border-radius: 10px;
+}
+#disneyplus-top {
+    background-color: rgb(78, 95, 202);
+}
+#disneyplus-button {
+    background-color: rgb(78, 95, 202);
+}
+.napster-logo {
+    position: relative;
+    width: 35%;
+    height: 30px auto;
+    bottom: 40px; 
+    border-radius: 10px;
+}
+#napster-top {
+    background-color: #202020;
+}
+#napster-button {
+    background-color: #202020;
+}
+.wish-logo {
+    position: relative;
+    width: 50%;
+    height: 30px auto;
+    bottom: 20px; 
+    border-radius: 10px;
+}
+#wish-top {
+    background-color: rgb(58, 128, 198);
+}
+#wish-button {
+    background-color: rgb(58, 128, 198);
+}
+.nordvpn-logo {
+    position: relative;
+    width: 35%;
+    height: 30px auto;
+    bottom: 50px; 
+    border-radius: 10px;
+}
+#nordvpn-top {
+    background-color: rgb(47, 126, 196);
+}
+#nordvpn-button {
+    background-color: rgb(47, 126, 196);
+}
+.pornhub-logo {
+    position: relative;
+    width: 35%;
+    height: 30px auto;
+    bottom: 50px; 
+    border-radius: 10px;
+}
+#pornhub-top {
+    background-color: rgb(255, 102, 0);
+}
+#pornhub-button {
+    background-color: rgb(255, 102, 0);
+}
+#hulu-top {
+    background-color: rgb(45, 142, 64);
+}
+#hulu-button {
+    background-color: rgb(45, 142, 64);
+}
+.vyper-logo {
+    position: relative;
+    width: 35%;
+    height: 30px auto;
+    bottom: 30px; 
+    border-radius: 10px;
+}
+#eurotruck-top {
+    background-color: rgb(42, 42, 42);
+}
+#eurotruck-button {
+    background-color: rgb(42, 42, 42);
+}
+.surfshark-logo {
+    position: relative;
+    width: 50%;
+    height: 30px auto;
+    bottom: 70px; 
+    border-radius: 10px;
+}
+#surfshark-top {
+    background-color: rgb(22, 125, 148);
+}
+#surfshark-button {
+    background-color: rgb(22, 125, 148);
+}
+.ipvanish-logo {
+    position: relative;
+    width: 35%;
+    height: 30px auto;
+    bottom: 40px;
+    border-radius: 5000px; 
+}
+#ipvanish-top {
+    background-color: rgb(85, 155, 50);
+}
+#ipvanish-button {
+    background-color: rgb(85, 155, 50);
+}
+.products-price {
+    color: white;
+    font-size: 2.5em;
+    margin: 100px auto;
+}
+.products-price-before {
+    position: relative;
+    color: rgb(159, 159, 159);
+    font-size: 1em;
+    bottom: 100px;
+    text-decoration: line-through;
+
+}
+
+    #crabware-top {
+    background-color: rgb(29, 4, 172)
+}
+
+#crabware-button {
+    background-color: rgb(29, 4, 172)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
