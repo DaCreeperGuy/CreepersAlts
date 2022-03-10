@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Get your accounts right here! Extreamly cheap and instant delivery!" />
+    <meta name="author" content="CREEPER"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Creepers Alts</title>
+    <link rel="icon" type="image/x-icon" href="images/creepersalt.png"images/>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    
+    <section class="Front-page">
+        <div class="Front-page-text">
+            
+            <h1>Creepers<span> Alts</span></h1>
+            <p>Everything you will ever need.</p>
+        </div>
+
+        <div class="Front-page-links">
+            <div class="Front-page-buttons">
+                <li><a class="frontbutton" href="products.html" target="_self">Products<img class="shopping" src="images/icons/shopping-cart.png" alt=""></a></li>
+                <li><a class="frontbutton" href="https://discord.gg/RVQa4geZuc" target=" _self">Discord<img class="discord" src="images/icons/discord(2).png" alt=""></a></li>
+            </div>
+        </div>
+    </section>
+    <div class="features-boxes">
+        <div class="topline"></div>
+        <div class="box">
+            <div class="topbar"></div>
+            <img class="box-icon" src="images/icons/light.png" alt=""</img>
+            <h1>Instant Delivery</h1>
+            <div class="line"></div>
+            <p>The products you have purchased will be sent to you after the purchase is complete and verified.</p>
+        </div>
+        <div class="box">
+            <div class="topbar"></div>
+            <img class="box-icon" src="images/icons/reuse.png" alt=""</img>
+            <h1>Replacements</h1>
+            <div class="line"></div>
+            <p>If you receive a bad or not working alt we will replace it for free 100% guaranteed.</p>
+        </div>
+        <div class="box">
+            <div class="topbar"></div>
+            <img class="box-icon" src="images/icons/conversation.png" alt=""</img>
+            <h1>24/7 Support</h1>
+            <div class="line"></div>
+            <p>Our support team is always here to help you if you have any issues or questions.</p>
+        </div>
+        
+        
+    </div>
+
+    
+
+
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal')
+            for(var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+
+                }
+            }
+        }
+
+</body>
+</html>
