@@ -1,0 +1,253 @@
+:root {
+    --primary-color: rgb(50, 56, 148);
+    --primary-color-hover: rgb(91, 98, 189);
+    --dark: #161616;
+    --dark-box: #171717;
+}
+
+html {
+    scroll-behavior: smooth;
+    min-height: 0vh;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #111111;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    
+    
+}
+
+#particles-js {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 99%;
+}
+
+
+
+/* START OF FRONT-PAGE */
+
+
+
+
+
+
+.Front-page-text {
+    height: 300px;
+    width: 800px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+
+
+.Front-page h1 {
+    color: white;
+    font-weight: normal;
+    position: relative;
+    font-size: 8em;
+    margin: -50px auto;
+
+}
+
+.Front-page p {
+    color: rgb(193, 193, 193);
+    margin: 50px auto;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+
+
+.Front-page-links {
+    position: relative;
+    width: 900px;
+    height: 100px;
+    margin: -320px auto;
+    left: -10px;
+    display: flex;
+    list-style: none;
+
+}
+
+.Font-page h1 {
+    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.Front-page h1 span {
+    color: var(--primary-color);
+}
+
+
+.Front-page-buttons {
+    text-decoration: none;
+    margin: 85px auto;
+    display: flex;
+    list-style: none;
+}
+
+.frontbutton {
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 1s;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 13px 70px;
+    opacity: 1;
+    transition: 0.5s;
+
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    margin: 3px;
+    
+}
+
+.frontbutton:hover {
+    box-shadow: inset 10px 0px 0px 40px var(--primary-color-hover);
+}
+
+
+.shopping {
+    transition: 0.2s;
+    position: absolute;
+    margin: 1px auto;
+    margin-left: 10px;
+}
+.frontbutton:hover .shopping {
+    transition: 0.2s;
+    margin-left: 20px;
+
+}
+
+
+.kinggen {
+    transition: 0.2s;
+    position: absolute;
+    margin: -4px auto;
+    margin-left: 10px;
+}
+.frontbutton:hover .kinggen {
+    transition: 0.2s;
+    margin-left: 20px;
+
+}
+#kinggenbutton {
+    font-size: 1em;
+    padding: 16px 70px;
+}
+
+
+.discord {
+    transition: 0.2s;
+    position: absolute;
+    margin: 1px auto;
+    margin-left: 10px;
+}
+.frontbutton:hover .discord {
+    transition: 0.2s;
+    margin-left: 20px;
+
+}
+
+.topline {
+    position: absolute;
+    border-radius: 100px;
+    height: 1px;
+    width: 850px;
+    background-color: rgb(150, 150, 150);
+    margin: 0px auto;
+
+}
+
+.features-boxes {
+    position: relative;
+    height: 300px;
+    width: 850px;
+    margin: 0px auto;
+    top: 350px;
+    display: flex;
+}
+
+.topbar {
+    transition: 0.4s;
+    width: 210;
+    height: 1px;
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+.box {
+    transition: 0.5s;
+    height: 240px;
+    width: 250px;
+    margin: auto;
+    background-color: var(--dark-box);
+    border-radius: 5px;
+
+}
+
+.box-icon {
+    position: relative;
+    transition: 0.2s;
+    margin: 20px auto;
+    margin-left: 95px;
+
+}
+
+
+
+.box:hover .line {
+    width: 70px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.box:hover p {
+    color: white;
+}
+
+.box:hover .topbar {
+    transition: 0.4s;
+    height: 20px;
+}
+
+.box h1 {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    top: -15px;
+    font-size: 1.3em;
+}
+
+.line {
+    transition: 0.4s;
+    height: 1px;
+    width: 30px;
+    background-color: rgb(150, 150, 150);
+    margin: -20px auto;
+}
+
+.box p {
+    transition: 0.4s;
+    position: relative;
+    color: rgb(165, 165, 165);
+    text-align: center;
+    top: 15px;
+    font-size: 0.8em;
+}
+
+
